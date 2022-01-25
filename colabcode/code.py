@@ -14,7 +14,7 @@ except ImportError:
     colab_env = False
 
 
-EXTENSIONS = ["ms-python.python", "ms-toolsai.jupyter", "github.copilot", "vscodevim.vim"]
+EXTENSIONS = ["ms-python.python", "ms-toolsai.jupyter", "TabNine.tabnine-vscode", "vscodevim.vim"]
 CODESERVER_VERSION = "3.8.0"
 
 
