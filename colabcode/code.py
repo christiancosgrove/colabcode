@@ -67,12 +67,13 @@ class ColabCode:
                         "code-server",
                         "--extensions-dir",
                         f"{self._extensions_dir}",
+                        "--allow-http", "--no-auth",
                         "--install-extension",
                         f"{ext}",
                     ]
                 )
             else:
-                subprocess.run(["code-server", "--install-extension", f"{ext}"])
+                subprocess.run(["code-server", "--allow-http", "--no-auth", "--install-extension", f"{ext}"])
 
     def _start_server(self):
         if self.authtoken:
